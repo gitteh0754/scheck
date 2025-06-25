@@ -1,0 +1,10 @@
+src/pycache
+dist/
+build/
+installer/
+
+main.spec
+
+scheck_linux.tar.gz
+scheck_portable.zip
+scheck-win-x86_64.exe

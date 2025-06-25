@@ -5,7 +5,7 @@ SizeCheck (or SCheck) is a simple python-based program that calculates the size 
 ## Usage
 
 ```
-$ scheck [folder] --exclude <none | files | folders> --size-type [b | kb | kib | mb | mib | gb | gib]
+$ scheck check [folder] --exclude <none | files | folders> --size-type [b | kb | kib | mb | mib | gb | gib]
 ```
 
 [folder], `--exclude` and `--size-type` are optional.
