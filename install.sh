@@ -19,9 +19,9 @@ if [ $EUID -gt 0 ]; then
   echo "Please run using sudo."
   exit 1
 else
-	wget -O /tmp/scheck https://github.com/gitteh0754/scheck/releases/download/1.0.0/scheck_linux
-	cp /tmp/scheck /usr/bin/
-	cp /tmp/scheck /bin/
-	echo Done!
+	wget -O /tmp/scheck.tar.gz https://github.com/gitteh0754/scheck/releases/download/1.0.0/scheck_linux.tar.gz
+	tar -xzf /tmp/scheck.tar.gz /usr/bin/scheck
+	cp /usr/bin/scheck /bin/
+	echo "Please add the /usr/bin/scheck and /bin/scheck folders to PATH manually using your shell's .\<shell\>rc file."
 fi
 
