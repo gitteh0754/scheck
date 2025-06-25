@@ -18,6 +18,8 @@ Their default values are:
 
 # Installation
 
+Download the correct installer or binary package for your OS, and then follow the steps below.
+
 ## Windows
 
 On Windows, all you have to do, is double click the installer, and restart your PC.
@@ -25,9 +27,5 @@ All the installer does is install the program to C:\Program Files, and then adds
 
 ## Linux
 
-On Linux (specifically Debian-similar distros), all you have to do is run this command:
-```sh
-curl -sSfL https://raw.githubusercontent.com/gitteh0754/scheck/install.sh | sudo bash
-```
-
-Don't be alarmed by the sudo, the script just installs the binary to /usr/bin/ and /bin/.
+You have to manually unzip the `scheck-linux.tar.gz` file from the releases page using `tar -xzf`, and add the directory in which the `_internal` and `scheck` files were extracted to the $PATH variable manually.
+This is because my install script does not load in cURL, so there is no one-liner. Sorry! :/
